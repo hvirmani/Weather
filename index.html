@@ -1,10 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	
+
+	<header>
+		<div class="input">
+			<input type="text" placeholder="City..." id="city">
+			<button id="search">
+				<i class="fa fa-search"></i>
+			</button>
+		</div>
+	</header>
+	<main>
+		<section>
+			<h2 id="cityName">Enter City</h2>
+			<div class="info">
+				<div class="condition">
+					<p id="temp">0.0°C</p>
+					<p id="condition">Unknown</p>
+				</div>
+
+				<div class="condition">
+					<img src="unknown.png" alt="" id="image">
+				</div>
+
+			</div>
+			<div class="data">
+				<span>
+					<p>Humidity:</p>
+					&nbsp;&nbsp;
+					<p id="humidity">0.0%</p>&nbsp;&nbsp;&nbsp;
+				</span>
+			</div>
+			<div class="data">
+				<span>
+					<p>Wind:</p>
+					&nbsp;
+					<p id="wind">0.0 kmph</p>&nbsp;&nbsp;
+				</span>
+			</div>
+			<div class="data">
+				<span>
+					<p> Pressure:</p>
+					&nbsp;
+					<p id="pressure">0.0 Hg</p>
+				</span>
+			</div>
+		</section>
+		<span class="update">
+			<p>*Last Updated</p>&nbsp;<p id="last_updated">2020-01-01 12:00</p>
+		</span>
+	</main>
+	<footer>
+		<div class="foot">Made with❤By Harshit</div>
+	</footer>
+	<script src="file.js"></script>
 </body>
+
 </html>
