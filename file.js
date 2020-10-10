@@ -1,7 +1,7 @@
 		let key = "e06cfdc0eba841558aa52433201109";
 		document.querySelector("#search").onclick = function () {
 			let city = document.getElementById("city").value;
-			let url = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=1`;
+			let url = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=1`;
 			showWeather(url);
 		}
 		$(document).on("keypress", "input", function (e) {
@@ -22,7 +22,7 @@
 		function showPosition(position) {
 			let lat = position.coords.latitude;
 			let long = position.coords.longitude;
-			let url = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${lat},${long}&days=1`;
+			let url = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${lat},${long}&days=1`;
 			showWeather(url);
 		}
 
